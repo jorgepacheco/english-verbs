@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/kelseyhightower/envconfig"
 	"log"
 	"net/http"
 )
@@ -30,7 +31,25 @@ func writeBody(writer http.ResponseWriter) {
 	json.NewEncoder(writer).Encode(myBody)
 }
 
+
+type Specification struct {
+	Debug       bool
+	Port        string
+	User        string
+	Users       []string
+	Rate        float32
+	ColorCodes  map[string]int
+}
+
 func main() {
-	log.Println("😄 Init english verbs API ")
-	http.ListenAndServe(":80", handler{})
+
+
+	var s Specification
+	err := envconfig.Process("", &s)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	log.Println(":" + s.Port)
+	log.Println("😄 Init english2 verbs API ")
+	http.ListenAndServe(":" + s.Port, handler{})
 }
