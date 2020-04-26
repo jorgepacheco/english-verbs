@@ -10,7 +10,7 @@ docker build -t jorgepacheco/server-english-verbs .
 
 # Heroku
 
-https://english-verbs.herokuapp.com/ | https://git.heroku.com/english-verbs.git
+https://english-verbs.herokuapp.com:23771/ | https://git.heroku.com/english-verbs.git
 
 ```
 λ heroku login

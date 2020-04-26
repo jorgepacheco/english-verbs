@@ -13,36 +13,35 @@ type handler struct {
 func (h handler) ServeHTTP(writer http.ResponseWriter, req *http.Request) {
 
 	if req.URL.Path == "/verbs" && req.Method == http.MethodGet {
+		log.Printf("Acceso a Verbos ...🏀")
 		writeBody(writer)
 		writer.WriteHeader(http.StatusOK)
 		return
 	}
 
-	log.Printf("No se pudo procesar el request")
+	log.Printf("No se pudo procesar el request ...")
 	writer.WriteHeader(http.StatusNotFound)
 	return
 }
 
 func writeBody(writer http.ResponseWriter) {
 	myBody := map[string]string{
-		"hello": "gophers",
+		"verbs": "to be",
 	}
 
 	json.NewEncoder(writer).Encode(myBody)
 }
 
-
 type Specification struct {
-	Debug       bool
-	Port        string
-	User        string
-	Users       []string
-	Rate        float32
-	ColorCodes  map[string]int
+	Debug      bool
+	Port       string
+	User       string
+	Users      []string
+	Rate       float32
+	ColorCodes map[string]int
 }
 
 func main() {
-
 
 	var s Specification
 	err := envconfig.Process("", &s)
@@ -51,5 +50,5 @@ func main() {
 	}
 	log.Println(":" + s.Port)
 	log.Println("😄 Init english2 verbs API ")
-	http.ListenAndServe(":" + s.Port, handler{})
+	http.ListenAndServe(":"+s.Port, handler{})
 }
