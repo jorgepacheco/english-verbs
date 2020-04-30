@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"english-verbs/internal/verbs"
-	"english-verbs/internal/verbs/persistence/memory"
+	"english-verbs/internal/verbs/persistence/csv"
 	"github.com/kelseyhightower/envconfig"
 	"log"
 	"net/http"
@@ -30,10 +30,6 @@ func (h handler) ServeHTTP(writer http.ResponseWriter, req *http.Request) {
 }
 
 func writeBody(writer http.ResponseWriter, verbs []verbs.Verb) {
-	/*	myBody := map[string]string{
-			"verbs": "to be",
-		}
-	*/
 	json.NewEncoder(writer).Encode(verbs)
 }
 
@@ -48,14 +44,21 @@ type Specification struct {
 
 func main() {
 
-	repository := memory.NewRepository()
+	repository := csv.NewRepository()
 
 	var s Specification
 	err := envconfig.Process("", &s)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	log.Println(":" + s.Port)
-	log.Println("😄 Init english2 verbs API ")
-	http.ListenAndServe(":"+s.Port, handler{repo: repository})
+
+	port := s.Port
+
+	if port == "" {
+		port = "80"
+	}
+
+	log.Println(":" + port)
+	log.Println("😄 Init english3 verbs API ")
+	http.ListenAndServe(":"+port, handler{repo: repository})
 }

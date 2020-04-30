@@ -11,4 +11,6 @@ FROM alpine
 EXPOSE 80
 EXPOSE $PORT
 COPY --from=build-env /go/bin/server /app/
-CMD ["/app/server"]
+COPY --from=build-env /go/src/english-verbs/server/data /app/data
+WORKDIR /app
+CMD ["./server"]
