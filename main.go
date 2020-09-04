@@ -15,6 +15,8 @@ type handler struct {
 
 func (h handler) ServeHTTP(writer http.ResponseWriter, req *http.Request) {
 
+	enableCors(&writer)
+
 	if req.URL.Path == "/verbs" && req.Method == http.MethodGet {
 		log.Printf("Acceso a Verbos ...🏀")
 
@@ -27,6 +29,10 @@ func (h handler) ServeHTTP(writer http.ResponseWriter, req *http.Request) {
 	log.Printf("No se pudo procesar el request ...")
 	writer.WriteHeader(http.StatusNotFound)
 	return
+}
+
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
 func writeBody(writer http.ResponseWriter, verbs []verbs.Verb) {
