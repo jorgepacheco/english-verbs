@@ -26,6 +26,13 @@ func init() {
 type VerbRepository struct {
 }
 
+func (repo *VerbRepository) FindById(id int) (domain.Verb, error) {
+
+	all, _ := repo.GetAll(context.Background())
+
+	return all[id], nil
+}
+
 func (repo *VerbRepository) GetAll(ctx context.Context) ([]domain.Verb, error) {
 
 	var verbs []domain.Verb

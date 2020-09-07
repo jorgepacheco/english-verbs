@@ -4,7 +4,9 @@ import (
 	"english-verbs/api"
 	"english-verbs/internal/logs"
 	"fmt"
+	"math/rand"
 	"os"
+	"time"
 )
 
 const defaultPort = "80"
@@ -26,14 +28,17 @@ func main() {
 
 }
 
-/*func main()  {
-	ctx := context.Background()
+func main4() {
 
-	repo := persistence.VerbRepository{}
+	for i := 0; i < 10; i++ {
+		//rand.Seed(time.Now().UnixNano())
+		//fmt.Printf("%v,", rand.Intn(100))
+		x1 := rand.NewSource(time.Now().UnixNano())
 
-	servicio := app.VerbService{Repo: &repo}
+		y1 := rand.New(x1)
 
-	all, _ := servicio.GetAll(ctx)
+		fmt.Println(y1.Intn(360))
 
-	fmt.Printf("%v", all)
-}*/
+	}
+
+}
