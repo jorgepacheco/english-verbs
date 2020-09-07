@@ -23,9 +23,7 @@ func (srv *VerbService) GetExam(numberOfQuestions int) ([]domain.Verb, error) {
 
 	var exam []domain.Verb
 
-	var limit = 360
-
-	questions := generateQuestions(numberOfQuestions, limit)
+	questions := generateQuestions(numberOfQuestions, srv.Repo.GetSize())
 
 	fmt.Printf(":: Questions %v", questions)
 

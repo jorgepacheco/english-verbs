@@ -33,6 +33,11 @@ func (repo *VerbRepository) FindById(id int) (domain.Verb, error) {
 	return all[id], nil
 }
 
+func (repo *VerbRepository) GetSize() int {
+
+	return len(verbsStorage)
+}
+
 func (repo *VerbRepository) GetAll(ctx context.Context) ([]domain.Verb, error) {
 
 	var verbs []domain.Verb
