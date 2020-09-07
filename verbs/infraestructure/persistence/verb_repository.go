@@ -1,16 +1,17 @@
-package csv
+package persistence
 
 import (
 	"bufio"
+	"context"
 	"encoding/csv"
-	"english-verbs/internal/verbs"
+	"english-verbs/verbs/domain"
 	"fmt"
 	"io"
 	"log"
 	"os"
 )
 
-var verbsStorage = map[string]verbs.Verb{}
+var verbsStorage = map[string]domain.Verb{}
 
 func init() {
 	fmt.Println(":: Init CSV Storage")
@@ -18,28 +19,23 @@ func init() {
 	for _, verb := range data {
 		verbsStorage[verb.Infinitive] = verb
 	}
-
 	//verb := verbs.NewVerb("START", "STARTED", "STARTED", "Comenzar - Arrancar")
 	//verbsStorage[verb.Infinitive] = verb
 }
 
-type repository struct {
+type VerbRepository struct {
 }
 
-// NewRepository initialize csv repository
-func NewRepository() verbs.VerbRepo {
-	return &repository{}
-}
+func (repo *VerbRepository) GetAll(ctx context.Context) ([]domain.Verb, error) {
 
-func (repo repository) GetAllVerbs() ([]verbs.Verb, error) {
-	var verbs []verbs.Verb
+	var verbs []domain.Verb
 	for _, value := range verbsStorage {
 		verbs = append(verbs, value)
 	}
 	return verbs, nil
 }
 
-func readData() []verbs.Verb {
+func readData() []domain.Verb {
 	csvFile, error := os.Open("./data/all_verbs.csv")
 
 	if error != nil {
@@ -47,7 +43,7 @@ func readData() []verbs.Verb {
 	}
 	reader := csv.NewReader(bufio.NewReader(csvFile))
 	reader.Comma = ';'
-	var verbsItems []verbs.Verb
+	var verbsItems []domain.Verb
 	for {
 		line, error := reader.Read()
 		if error == io.EOF {
@@ -55,7 +51,7 @@ func readData() []verbs.Verb {
 		} else if error != nil {
 			log.Fatal(error)
 		}
-		verbsItems = append(verbsItems, verbs.Verb{
+		verbsItems = append(verbsItems, domain.Verb{
 			Infinitive: line[1],
 			Past:       line[2],
 			Participle: line[3],

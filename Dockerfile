@@ -4,7 +4,7 @@ ENV CGO_ENABLED=0
 ENV GOOS=linux
 COPY . /go/src/english-verbs/server
 WORKDIR /go/src/english-verbs/server
-RUN go build -o /go/bin/server .
+RUN go build -o /go/bin/server cmd/main.go
 
 
 FROM alpine
