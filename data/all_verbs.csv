@@ -34,13 +34,13 @@ R;TURN;TURNED;TURNED;Girar - Voltear
 R;TYPE;TYPED;TYPED;Digitar en teclado
 R;UNDERLINE;UNDERLINED;UNDERLINED;Subrayar
 I;UNDERSTAND;UNDERSTOOD;UNDERSTOOD;Entender - Comprender
-I;UNDERTAKE;UNDERTOOK;UNDERTAKEN;Emprender - Encargarse de
+I;UNDERTAKE;UNDERTOOK;UNDERTAKEN;Emprender - Encargar
 I;UPSET;UPSET;UPSET;Alterar - Perturbar
 R;SHARE;SHARED;SHARED;Compartir
 R;SHARPEN;SHARPENED;SHARPENED;Afilar - Amolar
 I;SHINE;SHONE;SHONE;Brillar - Alumbrar
 I;SHOOT;SHOT;SHOT;Tirar - Disparar
-R;SHOP;SHOPPED;SHOPPED;Comprar en tiendas
+R;SHOP;SHOPPED;SHOPPED;Comprar
 R;SHOUT;SHOUTED;SHOUTED;Gritar
 R;SHOW;SHOWED;SHOWED;Mostrar - Enseñar
 I;SHRINK;SHRANK;SHRUNK;Encoger - Contraer
@@ -53,7 +53,7 @@ I;SIT;SAT;SAT;Sentarse
 R;SKATE;SKATED;SKATED;Patinar
 I;SLEEP;SLEPT;SLEPT;Dormir
 R;SLICE;SLICED;SLICED;Rebanar
-I;SLIDE;SLID;SLID;Resbalar(se)
+I;SLIDE;SLID;SLID;Resbalar
 R;SMELL;SMELLED;SMELLED;Oler - Husmear
 R;SMILE;SMILED;SMILED;Sonreir
 R;SMOKE;SMOKED;SMOKED;Fumar
@@ -65,14 +65,14 @@ I;SPEED;SPED;SPED;Acelerar
 R;SPELL;SPELLED;SPELLED;Deletrear
 I;SPEND;SPENT;SPENT;Gastar - Pasar el tiempo
 R;SPILL;SPILLED;SPILLED;Derramar
-I;SPIN;SPUN;SPUN;Hacer girar - Dar vueltas
+I;SPIN;SPUN;SPUN;Girar - Dar vueltas
 I;SPIT;SPIT;SPIT;Escupir
 R;SPLASH;SPLASHED;SPLASHED;Salpicar - Rociar - Chapotear
 I;SPLIT;SPLIT;SPLIT;Divir - Partir
 R;SPOIL;SPOILED;SPOILED;Estropear - Echar a perder - Mimar
 I;SPREAD;SPREAD;SPREAD;Esparcir - Untar - Extender
 R;SQUEEZE;SQUEEZED;SQUEEZED;Apretar - Comprimir
-I;STAND;STOOD;STOOD;Ponerse de pie - Pararse
+I;STAND;STOOD;STOOD;Ponerse de pie - Aguantar - POner - Tolerar - Estar de pie
 R;ADD;ADDED;ADDED;Agregar - Añadir
 R;ADVANCE;ADVANCED;ADVANCED;Avanzar - Adelantar
 R;APPEAR;APPEARED;APPEARED;Aparecer
@@ -86,10 +86,10 @@ R;ASSIGN;ASSIGNED;ASSIGNED;Asignar - Designar
 R;ASSIST;ASSISTED;ASSISTED;Ayudar - Asistir
 R;ATTACH;ATTACHED;ATTACHED;Unir - Juntar
 R;ATTEND;ATTENDED;ATTENDED;Asistir - Acompañar
-I;AWAKE;AWOKE;AWOKE;Despertar(se)
+I;AWAKE;AWOKE;AWOKE;Despertar(se) - Despertar
 R;AWARD;AWARDED;AWARDED;Otorgar - Premiar
 R;BAKE;BAKED;BAKED;Hornear - Cocer
-R;BATHE;BATHED;BATHED;Bañar(se)
+R;BATHE;BATHED;BATHED;Bañar(se) - Bañar
 I;BE;WAS - WERE;BEEN;Ser - Estar
 I;BEAR;BORE;BORN;Nacer
 I;BEAT;BEAT;BEATEN;Golpear - Batir
@@ -139,7 +139,7 @@ R;CLOSE;CLOSED;CLOSED;Cerrar - Finalizar
 R;COLLECT;COLLECTED;COLLECTED;Coleccionar
 I;COME;CAME;COME;Venir
 R;COMMENT;COMMENTED;COMMENTED;Comentar
-R;COMPLAIN;COMPLAINED;COMPLAINED;Quejar(se) - Reclamar
+R;COMPLAIN;COMPLAINED;COMPLAINED;Quejar(se) - Reclamar - Quejar
 R;COMPLETE;COMPLETED;COMPLETED;Completar
 R;CONTINUE;CONTINUED;CONTINUED;Continuar
 R;CONVINCE;CONVINCED;CONVINCED;Convencer
@@ -168,7 +168,7 @@ R;DISAGREE;DISAGREED;DISAGREED;Discrepar - No estar de acuerdo
 R;DISCOVER;DISCOVERED;DISCOVERED;Descubrir
 R;DISCUSS;DISCUSSED;DISCUSSED;Discutir
 R;DIVIDE;DIVIDED;DIVIDED;Dividir - Separar
-I;DO;DID;DONE;Hacer- Realizar
+I;DO;DID;DONE;Hacer - Realizar
 R;DRAIN;DRAINED;DRAINED;Agotar - Vaciar
 I;DRAW;DREW;DRAWN;Dibujar - Trazar
 R;DREAM;DREAMED;DREAMED;Soñar
@@ -185,13 +185,13 @@ R;EXCUSE;EXCUSED;EXCUSED;Excusar - Disculpar
 R;EXERCISE;EXERCISED;EXERCISED;Ejercitar - Practicar
 R;FADE;FADED;FADED;Desteñir - Descolorar
 R;FAIL;FAILED;FAILED;Fallar - Fracasar - Quebrar
-I;FALL;FELL;FALLEN;Caer(se)
+I;FALL;FELL;FALLEN;Caer(se) - Caer
 R;FASTEN;FASTENED;FASTENED;Abrochar - Sujertar
 R;FEAR;FEARED;FEARED;Temer - Tener miedo
-I;FEED;FED;FED;Alimentar(se)
-I;FEEL;FELT;FELT;Sentir(se)
+I;FEED;FED;FED;Alimentar(se) - Alimentar
+I;FEEL;FELT;FELT;Sentir(se) - Sentir
 I;FIGHT;FOUGHT;FOUGHT;Pelear
-R;FILL;FILLED;FILLED;Llenar(se) - Ocupar
+R;FILL;FILLED;FILLED;Llenar(se) - Ocupar - Llenar
 I;FIND;FOUND;FOUND;Encontrar - Hallar
 R;FINISH;FINISHED;FINISHED;Terminar - Finalizar
 R;FISH;FISHED;FISHED;Pescar
@@ -210,7 +210,7 @@ I;GIVE;GAVE;GIVEN;Dar - Regalar
 I;GO;WENT;GONE;Ir
 R;GRADE;GRADED;GRADED;Graduar - Calificar - Clasificar
 R;GRATE;GRATED;GRATED;Rallar - Raspar
-R;GRILL;GRILLED;GRILLED;Asar a la parrilla
+R;GRILL;GRILLED;GRILLED;Asar a la parrilla - Asar
 I;GRIND;GROUND;GROUND;Moler - Triturar
 I;GROW;GREW;GROWN;Crecer - Brotar
 R;HAND IN;HANDED IN;HANDED IN;Entregar - Presentar
@@ -224,7 +224,7 @@ R;HELP;HELPED;HELPED;Ayudar - Socorrer
 I;HIDE;HID;HIDDEN;Esconder - Ocultar
 I;HIT;HIT;HIT;Golpear - Pegar
 I;HOLD;HELD;HELD;Sostener - Retener- Mantener
-R;HURRY;HURRIED;HURRIED;Apresurar(se)
+R;HURRY;HURRIED;HURRIED;Apresurar(se) - Apresurar
 I;HURT;HURT;HURT;Herir - Lastimar
 R;IDENTIFY;IDENTIFIED;IDENTIFIED;Identificar
 R;IMAGINE;IMAGINED;IMAGINED;Imaginar
@@ -240,7 +240,7 @@ R;KILL;KILLED;KILLED;Matar - Acabar con
 R;KISS;KISSED;KISSED;BESAR
 I;KNOW;KNEW;KNOWN;Saber - Conocer
 R;LAND;LANDED;LANDED;Aterrizar - Desembarcar
-R;LAUGH;LAUGHED;LAUGHED;Reir(se)
+R;LAUGH;LAUGHED;LAUGHED;Reir(se) - Reir
 I;LAY;LAID;LAID;Poner - Colocar - Echar
 I;LEAD;LED;LED;Conducir - Liderar
 R;LEARN;LEARNED;LEARNED;Aprender
@@ -251,7 +251,7 @@ R;LICK;LICKED;LICKED;Lamer
 I;LIE;LAY;LAIN;Mentir
 I;LIGHT;LIT;LIT;Encender - Prender
 R;LIKE;LIKED;LIKED;Gustar - Querer
-R;LISTEN TO;LISTENED TO;LISTENED TO;Escuchar
+R;LISTEN;LISTENED;LISTENED;Escuchar
 R;LIVE;LIVED;LIVED;Vivir
 R;LOOK;LOOKED;LOOKED;Mirar - Lucir
 I;LOSE;LOST;LOST;Perder
@@ -301,7 +301,7 @@ R;PRINT;PRINTED;PRINTED;Imprimir
 R;PROMISE;PROMISED;PROMISED;Prometer
 R;PRONOUNCE;PRONOUNCED;PRONOUNCED;Pronunciar
 R;PUBLISH;PUBLISHED;PUBLISHED;Publicar
-R;PULL;PULLED;PULLED;Halar - Tirar de
+R;PULL;PULLED;PULLED;Halar - Tirar de - Tirar
 R;PUNISH;PUNISHED;PUNISHED;Castigar
 R;PUSH;PUSHED;PUSHED;Empujar
 I;PUT;PUT;PUT;Poner - Colocar
@@ -317,7 +317,7 @@ R;REPAIR;REPAIRED;REPAIRED;Reparar - Arreglar
 R;REPEAT;REPEATED;REPEATED;Repetir
 R;REPRESENT;REPRESENTED;REPRESENTED;Representar
 R;REST;RESTED;RESTED;Descansar - Reposar
-I;RID;RID;RID;Librarse de - Deshacerse
+I;RID;RID;RID;Librarse de - Deshacerse - Deshacer - Librar
 I;RIDE;RODE;RIDDEN;Cabalgar - Montar
 I;RING;RANG;RUNG;Sonar - Timbrar
 I;RISE;ROSE;RISEN;Subir - Ascender
@@ -334,27 +334,27 @@ R;SEW;SEWED;SEWED;Coser
 I;SHAKE;SHOOK;SHAKEN;Sacudir - Menear
 R;USE;USED;USED;Usar - Emplear - Utilizar
 R;VACUUM;VACUUMED;VACUUMED;Aspirar
-R;VANISH;VANISHED;VANISHED;Desvanecer(se)
+R;VANISH;VANISHED;VANISHED;Desvanecer(se) - Desvanecer
 R;VISIT;VISITED;VISITED;Visitar
 R;WAIT FOR;WAITED FOR;WAITED FOR;Esperar
-I;WAKE;WOKE;WOKEN;Despertar(se)
+I;WAKE;WOKE;WOKEN;Despertar(se) - Despertar
 R;WALK;WALKED;WALKED;Caminar
 R;WANT;WANTED;WANTED;Querer - Desear
 R;WARM;WARMED;WARMED;Calentar - Acalorar
 R;WASH;WASHED;WASHED;Lavar
 R;WATCH;WATCHED;WATCHED;Mirar - Observar - Vigilar
 R;WAVE;WAVED;WAVED;Agitar - Ondear
-I;WEAR;WORE;WORN;Usar - Llevar puesto
-I;WED;WED;WED;Casar(se) - Unirse con
-I;WEEP;WEPT;WEPT;Llorar - Sollozar - Lamentarse
+I;WEAR;WORE;WORN;Usar - Llevar puesto - Llevar - Vestir
+I;WED;WED;WED;Casar(se) - Unirse con - Casar
+I;WEEP;WEPT;WEPT;Llorar - Sollozar - Lamentarse - Lamentar
 R;WEIGH;WEIGHED;WEIGHED;Pesar - Ponderar
 R;WHISTLE;WHISTLED;WHISTLED;Silbar - Pitar
 I;WIN;WON;WON;Ganar
 R;WISH;WISHED;WISHED;Desear
-I;WITHDRAW;WITHDREW;WITHDRAWN;Retirar(se) - Quitar - Apartar
+I;WITHDRAW;WITHDREW;WITHDRAWN;Retirar(se) - Quitar - Apartar - Retirar
 R;WONDER;WONDERED;WONDERED;Maravillarse - Preguntarse
 R;WORK;WORKED;WORKED;Trabajar
-R;WORRY;WORRIED;WORRIED;Preocupar(se) - Inquietar(se)
+R;WORRY;WORRIED;WORRIED;Preocupar(se) - Inquietar(se) - Inquietar - Preocupar
 R;WRAP;WRAPPED;WRAPPED;Envolver - Embalar
 I;WRING;WRUNG;WRUNG;Exprimir - Escurrir - Retorcer
 I;WRITE;WROTE;WRITTEN;Escribir - Redactar
