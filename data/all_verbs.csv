@@ -93,11 +93,11 @@ R;BATHE;BATHED;BATHED;Bañar(se) - Bañar
 I;BE;WAS - WERE;BEEN;Ser - Estar
 I;BEAR;BORE;BORN;Nacer
 I;BEAT;BEAT;BEATEN;Golpear - Batir
-I;BECOME;BECAME;BECOME;Llegar a ser - Convertirse
+I;BECOME;BECAME;BECOME;Llegar a ser - Convertirse - Convertir
 I;BEGIN;BEGAN;BEGUN;Comenzar - Empezar
 R;BELIEVE;BELIEVED;BELIEVED;Creer
 R;BELONG;BELONGED;BELONGED;Pertenecer
-I;BEND;BENT;BENT;Doblarse - Encorvarse
+I;BEND;BENT;BENT;Doblar - Encorvar
 I;BET;BET;BET;Apostar
 I;BID;BID ;BID;Ofrecer - Ofertar - Mandar
 I;BIND;BOUND;BOUND;Atar - Pegar - Enlazar
@@ -114,13 +114,13 @@ I;BROADCAST;BROADCAST;BROADCAST;Difundir - Emitir
 R;BROWN;BROWN;BROWN;Tostar - Dorar
 R;BRUSH;BRUSHED;BRUSHED;Cepillar
 I;BUILD;BUILT;BUILT;Construir - Edificar
-R;BURN;BURNED;BURNED;Quemar(se)
+R;BURN;BURNED;BURNED;Quemar(se) - Quemar
 I;BURST;BURST;BURST;Estallar - Reventar
 I;BUY;BOUGHT;BOUGHT;Comprar - Adquirir
 R;CALL;CALLED;CALLED;Llamar
 R;CAMP;CAMPED;CAMPED;Acampar
 R;CANCEL;CANCELLED;CANCELLED;Cancelar
-R;CARE;CARED;CARED;Cuidar - Preocuparse
+R;CARE;CARED;CARED;Cuidar - Preocuparse - Preocupar
 R;CARRY;CARRIED;CARRIED;Llevar - Cargar
 I;CATCH;CAUGHT;CAUGHT;Coger - Agarrar
 R;CELEBRATE;CELEBRATED;CELEBRATED;Celebrar
